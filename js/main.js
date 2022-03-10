@@ -16,3 +16,42 @@ E se volessi un bottone per invertire la "direzione" del carosello?
 
  *
  */
+
+//| dobbiamo crearci un arrey di oggetti con all'interno nome del luogo/soggetto immagine - titolo/descrizione dell'img - img
+//| ciclo for per inserire le proprietà nel DOM
+
+
+const elements = [
+    {
+        item: '-1637768345162.jpg',
+        title: 'Gino Spadaccino',
+        description: 'significativa immagine di Gino mentre pela le patate',
+    },
+    {
+        item: 'elden-ring-art.jpeg',
+        title: 'Marco ed il cane Ugo',
+        description: 'Marco che porta a spasso il cane, a sua insaputa però incombeva una giornata ventosa',
+    },
+    {
+        item: 'elden-ring-scaled-1.jpg',
+        title: 'Foto di Delfina e ricordi di un estate a Foggia',
+        description: "Delfina ricordava bene quell'estate, faceva un caldo torrido, tando che riuscì a fotografare un passante mentre duellava con il Caldo Torrido",
+    },
+    {
+        item: 'sf_wvns.jpg',
+        title: 'Pierino e la marachella ',
+        description: 'Pierino che viene rinproverato dalla madre per i suoi svariati giri di scommesse clandestine',
+    },
+    {
+        item: 'the-witcher-stagione-2-serie-2021-geralt.jpg',
+        title: 'Geralt e i postumi',
+        description: 'Geralt dopo una serata con gli elfi, non andata proprio benissimo ',
+    },
+    {
+        item: 'zV8oTyn3AEfXibuuFLKez8.jpg',
+        title: 'Geralt il Macellaio di Rivia',
+        description: 'Geral in procinto di tagliare una libbra di carne alla signra Carmeala',
+    }
+]
+
+console.log(elements);
