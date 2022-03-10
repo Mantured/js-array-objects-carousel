@@ -1,6 +1,9 @@
 body {
 	font-family: "Montserrat", sans-serif;
 }
+main {
+	max-width: 1500px;
+}
 
 div.my-carousel-container {
 	min-height: 700px;

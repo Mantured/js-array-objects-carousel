@@ -123,24 +123,15 @@ document.querySelector('.my-previous').addEventListener('click', prev);
 
 const directionLeft = setInterval(coldPursuit, 1000);
 const directionRight = setInterval(hotPursuit, 1000);
-
+directionRight;
 
 document.querySelector('#reverse-direction').addEventListener('click', function () {
+
+    setTimeout(clearInterval,10000,directionLeft)
     clearInterval(directionLeft);
-    directionRight;
 
-
+    setTimeout(clearInterval,10000,directionRight)
 })
-
-
-
-
-
-
-
-
-/* setTimeout(directionRight, 21100);
-setTimeout(clearInterval, 31001, directionRight); */
 
 
 function hotPursuit() {
@@ -150,9 +141,10 @@ function hotPursuit() {
 }
 
 function coldPursuit() {
+    prev();
     unactive();
     prev();
-    active
+    active();
 }
 
 //| setTimeout(clearInterval, timeUser, directionRight);
