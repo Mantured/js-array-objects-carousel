@@ -50,11 +50,14 @@ const elements = [
     {
         image: 'zV8oTyn3AEfXibuuFLKez8.jpg',
         title: 'Geralt il Macellaio di Rivia',
-        description: 'Geral in procinto di tagliare una libbra di carne alla signra Carmeala',
+        description: 'Geral in procinto di tagliare una libbra di carne alla signra Carmela',
     }
 ]
 
-console.log(elements);
+/* let timeUser = parseInt(prompt('quanto tempo pensi di restare?'));
+timeUser = ((timeUser) * 60000);
+console.log(timeUser);
+console.log(elements); */
 
 //| ciclo for per inserire le proprietà nel DOM
 
@@ -111,14 +114,52 @@ function prev() {
     active();
 }
 
-
+document.getElementById('my-after-carousel').innerHTML = `
+    <button class="btn btn-dark" id="reverse-direction">Gira il Giro</button>
+`
 
 document.querySelector('.my-next').addEventListener('click', next);
 document.querySelector('.my-previous').addEventListener('click', prev);
 
+const directionLeft = setInterval(coldPursuit, 1000);
+const directionRight = setInterval(hotPursuit, 1000);
 
 
-//!testing
-/* function toggleActive(activeElement, unactiveElement) {
+document.querySelector('#reverse-direction').addEventListener('click', function () {
+    clearInterval(directionLeft);
+    directionRight;
 
-} */
+
+})
+
+
+
+
+
+
+
+
+/* setTimeout(directionRight, 21100);
+setTimeout(clearInterval, 31001, directionRight); */
+
+
+function hotPursuit() {
+    unactive();
+    next();
+    active();
+}
+
+function coldPursuit() {
+    unactive();
+    prev();
+    active
+}
+
+//| setTimeout(clearInterval, timeUser, directionRight);
+//? carina
+
+
+
+
+
+
